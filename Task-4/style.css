@@ -1,0 +1,141 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(to bottom right, #eaf1fb, #f8fbff);
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+nav {
+  background: #007bff;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+}
+
+nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Container & Forms */
+.container {
+  width: 90%;
+  max-width: 450px;
+  background: white;
+  margin: 50px auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  color: #007bff;
+}
+
+input,
+button,
+select {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Table styling */
+table {
+  width: 95%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+th {
+  background: #007bff;
+  color: white;
+}
+
+tr:hover {
+  background: #f3f8ff;
+}
+
+.error {
+  color: red;
+  background: #ffe6e6;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  border: 1px solid #ff9999;
+}
+
+/* Success message styling */
+.success {
+  color: green;
+  background: #e6ffe6;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  border: 1px solid #99ff99;
+}
+
+/* Search and sort form */
+.search-sort {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search-sort input,
+.search-sort select,
+.search-sort button {
+  flex: 1;
+  min-width: 150px;
+  margin: 5px;
+}
+
+.search-sort button {
+  flex: 0;
+  min-width: 100px;
+}
+
+.content {
+  padding: 20px;
+}

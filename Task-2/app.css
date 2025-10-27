@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.subtitle {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.student-table th {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.student-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ecf0f1;
+    transition: all 0.3s ease;
+}
+
+.student-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.student-table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.student-table tr:hover {
+    background-color: #e8f4fc;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.status-excellent {
+    background-color: #2ecc71 !important;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.status-good {
+    background-color: #3498db !important;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.status-pass {
+    background-color: #f39c12 !important;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.status-fail {
+    background-color: #e74c3c !important;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.marks-display {
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.average {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.message {
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.summary-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+}
+
+.summary-card h3 {
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+.summary-card .count {
+    font-size: 2em;
+    font-weight: bold;
+    color: #3498db;
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .student-table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .container {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    .summary {
+        flex-direction: column;
+    }
+    
+    .summary-card {
+        min-width: 100%;
+    }
+}
